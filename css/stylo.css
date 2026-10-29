@@ -1,0 +1,146 @@
+/* Configuração geral */
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #eaf8f8;
+    color: #263b45;
+    line-height: 1.6;
+}
+
+/* Título principal */
+h1 {
+    text-align: center;
+    color: #075b70;
+    padding: 25px 10px;
+    margin: 0;
+}
+
+/* Menu */
+nav {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 15px;
+    background-color: #087f8c;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 14px;
+    border-radius: 6px;
+    transition: background-color 0.3s,
+                transform 0.3s;
+}
+
+nav a:hover {
+    background-color: #075b70;
+    transform: translateY(-3px);
+}
+
+nav a:focus-visible {
+    outline: 3px solid #ffd166;
+    outline-offset: 3px;
+}
+
+/* Títulos das seções */
+h2, h3 {
+    text-align: center;
+    color: #176b52;
+}
+
+/* Conteúdo */
+section {
+    max-width: 1100px;
+    margin: 25px auto;
+    padding: 25px;
+    background-color: white;
+    border-radius: 12px;
+}
+
+/* Imagens */
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Tabela do visitante */
+.tabela-container {
+    width: 100%;
+    overflow-x: auto;
+    margin: 20px auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: white;
+}
+
+th, td {
+    border: 1px solid #b5d7df;
+    padding: 12px;
+    text-align: center;
+}
+
+th {
+    background-color: #087f8c;
+    color: white;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #eaf8f8;
+}
+
+/* Rodapé */
+footer {
+    text-align: center;
+    background-color: #087f8c;
+    color: white;
+    padding: 20px;
+    margin-top: 30px;
+}
+
+/* Ajustes para celular */
+@media (max-width: 600px) {
+    h1 {
+        font-size: 26px;
+    }
+
+    section {
+        margin: 15px 10px;
+        padding: 15px;
+    }
+
+    nav {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    nav a {
+        text-align: center;
+    }
+}
+#Fale{
+    display: inline-block;
+    color: #344f8a;
+    font-size: 20px;
+    transition: 0.3s;
+}
+
+#Fale:hover {
+    color: #ff6600;
+    transform: scale(1.2);
+    text-decoration: none;
+    cursor: pointer;
+}

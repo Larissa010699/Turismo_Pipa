@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fale Conosco</title>
+    <link rel="icon" href="https://img.icons8.com/?size=100&id=122843&format=png&color=000000">
+    <link rel="stylesheet" href="../css/Estilo.css">
+</head>
+<body>
+    <h1>Fale Conosco</h1>
+     <fieldset>
+        <legend>Formulário de Contato</legend>
+    <form action="#" method="post">
+
+       <div class="form-group">
+        <label for="Nome">Nome Completo</label>
+        <input type="text" id="Nome" name="Nome" placeholder="Seu nome completo" required>
+       </div>
+        
+       <div class="form-group">
+        <label for="email">E-mail</label>
+        <input type="email" id="email" name="email" placeholder="Seu@email.com" required>
+       </div>
+
+       <div class="form-group">
+        <label for="tel">Telefone</label>
+        <input type="tel" id="Telefone" name="Telefone" placeholder="55 (84) 99999-9999">
+       </div>
+
+       <div class="form-group">
+        <label for="assunto">Assunto</label>
+        <select name="assunto" id="assunto" required>
+            <option value="" disabled selected>Selecione o Assunto</option>
+            <option value="duvida">Tirar Dúvidas</option>
+            <option value="sugestao">Dar Susgestões</option>
+            <option value="elogio">Elogios</option>
+        </select>
+       </div>
+
+       <div class="form-group">
+        <label for="mensagem">Mensagem</label>
+        <textarea name="mensagem" id="mensagem" rows="4" placeholder="Digite aqui sua mensagem" required></textarea>
+       </div>
+
+       <button type="submit">Enviar</button>
+
+    </form>
+    </fieldset>
+
+     <h2>Reserve seu Passeio</h2>
+    <fieldset>
+        <legend>Agendamento de Experiências</legend>
+        <form action="#" method="post">
+
+            <div class="form-group">
+                <label for="cliente">Nome do Titular</label>
+                <input type="text" id="cliente" name="cliente" placeholder="Nome completo de quem vai viajar" required>
+            </div>
+
+            <div class="form-group">
+                <label for="passeio">Escolha o Passeio / Visita</label>
+                <select name="passeio" id="passeio" required>
+                    <option value="" disabled selected>Selecione a atividade</option>
+                    <option value="santuario">Trilha Guiada no Santúario Ecológico</option>
+                    <option value="barco-golfinhos">Passeio de Barco na Baía dos Golfinhos</option>
+                    <option value="quadriciclo">Tour de Quadriciclo pelo Chapadão</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="data-reserva">Data da Visita</label>
+                <input type="date" id="data-reserva" name="data-reserva" required>
+            </div>
+
+            <div class="form-group">
+                <label for="vagas">Quantidade de Pessoas</label>
+                <input type="number" id="vagas" name="vagas" min="1" max="10" placeholder="Ex: 2" required>
+            </div>
+
+            <button type="submit" onclick="alert('Mensagem Enviada com Sucesso!')"> Confirmar Reserva  </button>
+
+    </form>
+    </fieldset>
+    <a href="Pipa-RN.html"><button>Voltar</button></a>
+</body>
+</html>

@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Fale Conosco - Praia da Pipa</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(
+                135deg, #c7f3ef, #eaf8ff
+            );
+            color: #23434c;
+        }
+
+        header {
+            background-color: #087f8c;
+            color: white;
+            text-align: center;
+            padding: 25px 15px;
+        }
+
+        header h1 {
+            margin: 0 0 8px;
+        }
+
+        nav {
+            background-color: #075b70;
+            padding: 12px;
+            text-align: center;
+        }
+
+        nav a {
+            display: inline-block;
+            color: white;
+            text-decoration: none;
+            padding: 8px 14px;
+            border-radius: 6px;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            background-color: #20bfc5;
+            transform: translateY(-3px);
+        }
+
+        main {
+            padding: 30px 15px;
+        }
+
+        .formulario {
+            max-width: 600px;
+            margin: auto;
+            background-color: white;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px
+                rgba(0, 70, 90, 0.15);
+        }
+
+        .formulario h2 {
+            text-align: center;
+            color: #087f8c;
+            margin-top: 0;
+        }
+
+        .formulario p {
+            text-align: center;
+            line-height: 1.5;
+        }
+
+        .campo {
+            margin-bottom: 18px;
+        }
+
+        label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 7px;
+        }
+
+        input, select, textarea {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #b8d4dc;
+            border-radius: 7px;
+            font-size: 16px;
+            font-family: inherit;
+        }
+
+        input:focus, select:focus,
+        textarea:focus {
+            outline: 2px solid #20bfc5;
+            border-color: #087f8c;
+        }
+
+        textarea {
+            min-height: 130px;
+            resize: vertical;
+        }
+
+        .botoes {
+            display: flex;
+            gap: 12px;
+            margin-top: 22px;
+        }
+
+        button {
+            flex: 1;
+            padding: 13px;
+            border: none;
+            border-radius: 7px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .enviar {
+            background-color: #087f8c;
+            color: white;
+        }
+
+        .enviar:hover {
+            background-color: #075b70;
+            transform: translateY(-2px);
+        }
+
+        .limpar {
+            background-color: #e4eff2;
+            color: #23434c;
+        }
+
+        .limpar:hover {
+            background-color: #c8dfe5;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #087f8c;
+            color: white;
+            margin-top: 20px;
+        }
+
+        @media (max-width: 480px) {
+            .formulario {
+                padding: 20px;
+            }
+
+            .botoes {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>🌊 Praia da Pipa, RN</h1>
+        <p>Seu próximo destino começa aqui!</p>
+    </header>
+
+    <nav>
+        <a href="../index.html">Página Inicial</a>
+        <a href="Form1.html">Fale Conosco</a>
+    </nav>
+
+    <main>
+        <section class="formulario">
+            <h2>Fale Conosco</h2>
+
+            <p>
+                Tem dúvidas ou sugestões sobre a Praia da Pipa?
+                Preencha o formulário abaixo!
+            </p>
+
+            <form action="#" method="post">
+
+                <div class="campo">
+                    <label for="nome">Nome completo *</label>
+                    <input
+                        type="text"
+                        id="nome"
+                        name="nome"
+                        placeholder="Digite seu nome"
+                        autocomplete="name"
+                        required>
+                </div>
+
+                <div class="campo">
+                    <label for="email">E-mail *</label>
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        placeholder="exemplo@email.com"
+                        autocomplete="email"
+                        required>
+                </div>
+
+                <div class="campo">
+                    <label for="telefone">Telefone</label>
+                    <input
+                        type="tel"
+                        id="telefone"
+                        name="telefone"
+                        placeholder="(84) 99999-9999"
+                        autocomplete="tel">
+                </div>
+
+                <div class="campo">
+                    <label for="assunto">Assunto *</label>
+                    <select id="assunto" name="assunto"
+                            required>
+                        <option value="">
+                            Selecione um assunto
+                        </option>
+                        <option value="turismo">
+                            Pontos turísticos
+                        </option>
+                        <option value="hospedagem">
+                            Hotéis e hospedagem
+                        </option>
+                        <option value="alimentacao">
+                            Restaurantes e comidas
+                        </option>
+                        <option value="sugestao">
+                            Sugestões
+                        </option>
+                        <option value="outro">Outro</option>
+                    </select>
+                </div>
+
+                <div class="campo">
+                    <label for="mensagem">Sua mensagem *</label>
+                    <textarea
+                        id="mensagem"
+                        name="mensagem"
+                        placeholder="Escreva sua mensagem..."
+                        required></textarea>
+                </div>
+
+                <div class="botoes">
+                    <button type="submit" class="enviar">
+                        Enviar mensagem
+                    </button>
+
+                    <button type="reset" class="limpar">
+                        Limpar formulário
+                    </button>
+                </div>
+
+                <p>
+                    * Campos obrigatórios.
+                </p>
+
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>Praia da Pipa, RN — © 2026</p>
+    </footer>
+
+</body>
+</html>
