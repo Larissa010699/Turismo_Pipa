@@ -73,6 +73,9 @@ img {
     height: auto;
     border-radius: 10px;
 }
+.espaco li{
+    list-style-type: none;
+}
 
 /* Tabela do visitante */
 .tabela-container {
